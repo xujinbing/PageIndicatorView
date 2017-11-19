@@ -19,7 +19,9 @@ To add `pageindicatorview` to your project, first make sure in root `build.gradl
 >***Note***: by creating new project in Android Studio it will have `jcenter` repository specified by default, so you will not need to add it manually.
 
 Once you make sure you have `jcenter` repository in your project, all you need to do is to add the following line in `dependencies` section of your project `build.gradle`.
- 
+
+<a name="hello_world"></a> 
+
 See latest library version [ ![Download](https://api.bintray.com/packages/romandanylyk/maven/pageindicatorview/images/download.svg) ](https://bintray.com/romandanylyk/maven/pageindicatorview/_latestVersion)
 ```groovy
 compile 'com.romandanylyk:pageindicatorview:X.X.X'
@@ -99,6 +101,13 @@ While interactive animation will progress the animation process within your swip
 
 Here you can see all the animations `PageIndicatorView` support.
 
+[Hello world](#hello_world)
+
+
+
+
+
+
 Name| Support version| Preview
 -------- | --- | ---
 `AnimationType.NONE`| 0.0.1 | ![anim_none](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_none.gif)
@@ -111,13 +120,14 @@ Name| Support version| Preview
 `AnimationType.DROP`| 0.1.0 |![anim_drop](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_drop.gif)
 `AnimationType.SWAP`| 0.1.1 |![anim_swap](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_swap.gif)
 
+
 ### **Documentation**
 
 Methods | Description
 ------- | -----------
-`setCount(int count)` | Set static number of circle indicators to be displayed. Param `count` - total count of indicators.
+`setCount(int count)` | Set static number of circle indicators to be displayed.
 `getCount()` |  Return number of circle indicators
-`setDynamicCount(boolean dynamicCount)` | Dynamic count will automatically update number of circle indicators if ViewPager page count updates on run-time. If new count will be bigger than current count, selected circle will stay as it is, otherwise it will be set to last one. Note: works if `ViewPager` set and already have it's adapter. See {@link #setViewPager(ViewPager)}.
+`setDynamicCount(boolean dynamicCount)` | Dynamic count will automatically update number of circle indicators if ViewPager page count updates on run-time. If new count will be bigger than current count, selected circle will stay as it is, otherwise it will be set to last one. Note: works if `ViewPager` set and already have it's adapter. See `setViewPager`.
 `setRadius(int radiusDp)` | Set radius in dp of each circle indicator. Default value is 6 dp. Make sure you set circle Radius, not a Diameter.
 `setRadius(int radiusPx)` | Set radius in px of each circle indicator. Default value is 6 dp. Make sure you set circle Radius, not a Diameter.
 `getRadius()` | Returns radius of each circle indicators in px.
