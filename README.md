@@ -20,8 +20,6 @@ To add `pageindicatorview` to your project, first make sure in root `build.gradl
 
 Once you make sure you have `jcenter` repository in your project, all you need to do is to add the following line in `dependencies` section of your project `build.gradle`.
 
-<a name="hello_world"></a> 
-
 See latest library version [ ![Download](https://api.bintray.com/packages/romandanylyk/maven/pageindicatorview/images/download.svg) ](https://bintray.com/romandanylyk/maven/pageindicatorview/_latestVersion)
 ```groovy
 compile 'com.romandanylyk:pageindicatorview:X.X.X'
@@ -98,15 +96,7 @@ While interactive animation will progress the animation process within your swip
         });
 ```
 
-
 Here you can see all the animations `PageIndicatorView` support.
-
-[Hello world](#hello_world)
-
-
-
-
-
 
 Name| Support version| Preview
 -------- | --- | ---
@@ -127,7 +117,7 @@ Methods | Description
 ------- | -----------
 `setCount(int count)` | Set static number of circle indicators to be displayed.
 `getCount()` |  Return number of circle indicators
-`setDynamicCount(boolean dynamicCount)` | Dynamic count will automatically update number of circle indicators if ViewPager page count updates on run-time. If new count will be bigger than current count, selected circle will stay as it is, otherwise it will be set to last one. Note: works if `ViewPager` set and already have it's adapter. See `setViewPager`.
+`setDynamicCount(boolean dynamicCount)` | Dynamic count will automatically update number of circle indicators if ViewPager page count updates on run-time. If new count will be bigger than current count, selected circle will stay as it is, otherwise it will be set to last one. Note: works if `ViewPager` set and already have it's adapter. See [`setViewPager`](#setViewPager).
 `setRadius(int radiusDp)` | Set radius in dp of each circle indicator. Default value is 6 dp. Make sure you set circle Radius, not a Diameter.
 `setRadius(int radiusPx)` | Set radius in px of each circle indicator. Default value is 6 dp. Make sure you set circle Radius, not a Diameter.
 `getRadius()` | Returns radius of each circle indicators in px.
@@ -149,7 +139,7 @@ Methods | Description
 `getAnimationDuration()` | Return animation duration time in milliseconds. If custom duration is not set, return default duration time {@link BaseAnimation#DEFAULT_ANIMATION_TIME}. 
 `setAnimationType(@Nullable AnimationType type)` | Set animation type to perform while selecting new circle indicator. Default animation type is {@link AnimationType#NONE}.
 `setInteractiveAnimation(boolean isInteractive)` | Interactive animation will animate indicator smoothly from position to position based on user's current swipe progress. (Won't affect on anything unless {@link #setViewPager(ViewPager)} is specified). isInteractive value of animation to be interactive or not.
-`setViewPager(@Nullable ViewPager pager)`  | Set {@link ViewPager} to add {@link ViewPager.OnPageChangeListener} and automatically handle selecting new indicators (and interactive animation effect if it is enabled).
+<a name="setViewPager"></a> `setViewPager(@Nullable ViewPager pager)`  | Set {@link ViewPager} to add {@link ViewPager.OnPageChangeListener} and automatically handle selecting new indicators (and interactive animation effect if it is enabled).
 `releaseViewPager()` | Release {@link ViewPager} and stop handling events of {@link ViewPager.OnPageChangeListener}.
 `setRtlMode(RtlMode mode)` | Specify to display PageIndicatorView with Right to left layout or not. One of {@link RtlMode}: Off (Left to right), On (Right to left) or Auto (handle this mode automatically based on users language preferences). Default is Off. 
 `setSelection(int position)` | Set specific circle indicator position to be selected. If position < or > total count, accordingly first or last circle indicator will be selected.(Won't affect on anything unless {@link #setInteractiveAnimation(boolean isInteractive)} is false).
