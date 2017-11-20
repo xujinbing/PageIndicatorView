@@ -102,10 +102,10 @@ Name| Support version| Preview
 -------- | --- | ---
 `AnimationType.NONE`| 0.0.1 | ![anim_none](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_none.gif)
 `AnimationType.COLOR`| 0.0.1 |![anim_color](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_color.gif)
-<a name="animation.scale"></a>`AnimationType.SCALE`| 0.0.1 |![anim_scale](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_scale.gif)
+<a name="animation_scale"></a> `AnimationType.SCALE`| 0.0.1 |![anim_scale](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_scale.gif)
 `AnimationType.SLIDE`| 0.0.1 |![anim_slide](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_slide.gif)
 `AnimationType.WORM`| 0.0.1 |![anim_worm](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_worm.gif)
-<a name="animation.fill"></a>`AnimationType.FILL`| 0.0.6 |![anim_worm](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_fill.gif)
+<a name="animation_fill"></a> `AnimationType.FILL`| 0.0.6 |![anim_worm](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_fill.gif)
 `AnimationType.THIN_WORM`| 0.0.7 |![anim_thin_worm](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_thin_worm.gif)
 `AnimationType.DROP`| 0.1.0 |![anim_drop](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_drop.gif)
 `AnimationType.SWAP`| 0.1.1 |![anim_swap](https://raw.githubusercontent.com/romandanylyk/PageIndicatorView/master/assets/anim_swap.gif)
@@ -124,10 +124,10 @@ Methods | Description
 `setPadding(int paddingDp)` | Set padding in dp between each circle indicator. Default value is 8 dp.
 `setPadding(int paddingPx)` | Set padding in px between each circle indicator. Default value is 8 dp.
 `getPadding()` | Returns padding in px between each circle indicator. 
-`setScaleFactor(float factor)` | Set scale factor used in [`AnimationType.SCALE`](animation.scale) animation. Defines size of unselected indicator circles in comparing to selected one. Minimum and maximum values are 1 and 0.3.
-`getScaleFactor()` | Returns scale factor values used in [`AnimationType.SCALE`](animation.scale) animation. Defines size of unselected indicator circles in comparing to selected one. Minimum and maximum values are 1 and 0.3.
-`setStrokeWidth(float strokePx)` | Set stroke width in px to set while [`AnimationType.FILL`](animation.fill) is selected. Default value is 1 dp.
-`setStrokeWidth(float strokeDp)` | Set stroke width in dp to set while [`AnimationType.FILL`](animation.fill) is selected. Default value is 1 dp.
+`setScaleFactor(float factor)` | Set scale factor used in [`AnimationType.SCALE`](animation_scale) animation. Defines size of unselected indicator circles in comparing to selected one. Minimum and maximum values are 1 and 0.3.
+`getScaleFactor()` | Returns scale factor values used in [`AnimationType.SCALE`](animation_scale) animation. Defines size of unselected indicator circles in comparing to selected one. Minimum and maximum values are 1 and 0.3.
+`setStrokeWidth(float strokePx)` | Set stroke width in px to set while [`AnimationType.FILL`](animation_fill) is selected. Default value is 1 dp.
+`setStrokeWidth(float strokeDp)` | Set stroke width in dp to set while [`AnimationType.FILL`](animation_fill) is selected. Default value is 1 dp.
 `getStrokeWidth()` | Return stroke width in px. If custom stroke width is not set and {@link AnimationType#FILL} is selected.
 `setSelectedColor(int color)` | Set color of selected state to circle indicator. Default color is white {@link ColorAnimation#DEFAULT_SELECTED_COLOR}.
 `getSelectedColor()` | Return color of selected circle indicator. If custom unselected color. is not set, return default color {@link ColorAnimation#DEFAULT_SELECTED_COLOR}.
