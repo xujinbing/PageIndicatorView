@@ -112,6 +112,7 @@ Name| Support version| Preview
 
 
 ### **Documentation**
+Here you can see all the methods you can call to make `PageIndicatorView` to perform as you need. Keep in mind, most or this methods are also available as attributes.
 
 Method | Description
 ------ | -----------
