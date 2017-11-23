@@ -68,7 +68,7 @@ But if you're as lazy as I'm - then there is another option to handle `PageIndic
 All the `piv_` attributes here are specific for `PageIndicatorView` so you can customise it as you want with attributes - pretty handy. 
 
 But what is more important here is  `app:piv_viewPager="@id/viewPager"`.
-What it actually do is catch up your `ViewPager` and automatically handles all the event's to selected the right page - so you don't need to call `setSelection` method on your own.
+What it actually do is catch up your `ViewPager` and automatically handles all the events to select the right page - so you don't need to call `setSelection` method on your own.
 
 Another handy options here that works with your `ViewPager` as a whole is 
 `app:piv_dynamicCount="true"` and ` app:piv_interactiveAnimation="true"` 
@@ -82,6 +82,7 @@ While interactive animation will progress the animation process within your swip
 
 
 ```java
+  pageIndicatorView.setSelected(pager.getCurrentItem()); // set selected item without any animation to handle reusing views
   pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {/*empty*/}
